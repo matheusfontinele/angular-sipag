@@ -1,8 +1,7 @@
 import {Comercio} from "./comercio";
 
-export class Telefone {
+export class Email {
   id: number;
-  tipoTelefone: string;
-  numero: string;
+  email: string;
   comercio: Comercio;
 }
