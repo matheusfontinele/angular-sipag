@@ -1,0 +1,11 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit(form.value)">
+  <input name="name" formControlName="name"/>
+  <input name="adress" formControlName="adress"/>
+
+  <button class="button" type="submit">Send</button>
+</form>
