@@ -6,8 +6,8 @@ export class ComercioService {
 
   constructor(private http: HttpClient) { }
 
-  getComercios(){
-    return this.http.get("https://viacep.com.br/ws/01001000/json/");
+  getComercios() {
+    return this.http.get<any>("https://viacep.com.br/ws/01001000/json/");
   }
 
 }

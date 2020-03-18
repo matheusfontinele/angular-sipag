@@ -8,12 +8,14 @@ import { ComercioService} from '../comercio.service';
 })
 export class ListarComercioComponent implements OnInit {
 
-  
+  result: string;
 
   constructor(private comercioService: ComercioService) { } 
 
   ngOnInit() {
-    console.warn(this.comercioService.getComercios());
+    console.warn(this.comercioService.getComercios().subscribe(data => {
+      this.result = data.cep;
+    }));
   }
 
 }
