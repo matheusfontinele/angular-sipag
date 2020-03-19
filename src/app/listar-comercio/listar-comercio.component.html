@@ -1,1 +1,9 @@
+<div>
+  <input #cep type="text" id="cep" 
+  (blur)="consulta(cep.value)"
+  (keyup.enter)="consulta(cep.value)"/>
+  <input type="text" id="logradouro" value="{{result2}}"/>
+  <input type="text" id="complemento"/>
+</div>
+
 <p>{{result}}</p>
